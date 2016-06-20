@@ -13,7 +13,7 @@
 			<th>Name</th>
 			<th>Topic</th>
 			</tr>
-		<tr ng-repeat="x in session">
+		<tr ng-repeat="x in session |orderBy:'name'">
 		<td ng-bind="x.name"></td>
 		<td ng-bind="x.topic"></td>
 		</tr>
